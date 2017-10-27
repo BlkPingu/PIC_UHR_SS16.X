@@ -1,0 +1,829 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcObhgR1u.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 1D 1D 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production/PIC_UHR_SS16.X.production.obj
+cinit CODE 0 1F 1F 17 2
+text1 CODE 0 2C9 2C9 60 2
+text2 CODE 0 329 329 2B 2
+text3 CODE 0 36 36 EB 2
+text4 CODE 0 3B6 3B6 12 2
+text5 CODE 0 3E6 3E6 C 2
+text6 CODE 0 390 390 13 2
+text7 CODE 0 40B 40B 3 2
+text8 CODE 0 3FF 3FF 6 2
+text9 CODE 0 3C8 3C8 F 2
+nvCOMMON COMMON 1 7A 7A 1 1
+text10 CODE 0 354 354 14 2
+text11 CODE 0 405 405 6 2
+text13 CODE 0 3A3 3A3 13 2
+text14 CODE 0 3D7 3D7 F 2
+text15 CODE 0 410 410 1 2
+text16 CODE 0 3F2 3F2 7 2
+text17 CODE 0 121 121 B1 2
+text18 CODE 0 260 260 69 2
+nvBANK0 BANK0 1 37 37 2 1
+maintext CODE 0 1D2 1D2 8E 2
+cstackCOMMON COMMON 1 70 70 6 1
+cstackBANK0 BANK0 1 34 34 3 1
+intentry CODE 0 4 4 19 2
+bssBANK0 BANK0 1 20 20 14 1
+idataBANK0 CODE 0 40E 40E 2 2
+swtext1 CONST 0 368 368 14 2
+swtext2 CONST 0 37C 37C 14 2
+dataBANK0 BANK0 1 39 39 2 1
+clrtext CODE 0 3F9 3F9 6 2
+bssCOMMON COMMON 1 76 76 4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3B-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-24F 1
+BANK0 3B-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-24F 1
+CONST 2-3 2
+CONST 411-FFF 2
+ENTRY 2-3 2
+ENTRY 411-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 201B-216F 1
+CODE 2-3 2
+CODE 411-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-2EF 1
+SFR6 300-36F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-216F 1
+COMMON 7B-7D 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 411-FFF 2
+STRING 2-3 2
+STRING 411-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/PIC_UHR_SS16.X.production.obj
+1F cinit CODE >2417:/tmp/xcfcO32GD
+1F cinit CODE >2420:/tmp/xcfcO32GD
+1F cinit CODE >2488:/tmp/xcfcO32GD
+20 cinit CODE >2489:/tmp/xcfcO32GD
+21 cinit CODE >2490:/tmp/xcfcO32GD
+22 cinit CODE >2491:/tmp/xcfcO32GD
+23 cinit CODE >2495:/tmp/xcfcO32GD
+24 cinit CODE >2496:/tmp/xcfcO32GD
+25 cinit CODE >2497:/tmp/xcfcO32GD
+26 cinit CODE >2498:/tmp/xcfcO32GD
+27 cinit CODE >2499:/tmp/xcfcO32GD
+28 cinit CODE >2500:/tmp/xcfcO32GD
+2B cinit CODE >2505:/tmp/xcfcO32GD
+2E cinit CODE >2506:/tmp/xcfcO32GD
+2F cinit CODE >2507:/tmp/xcfcO32GD
+31 cinit CODE >2508:/tmp/xcfcO32GD
+32 cinit CODE >2514:/tmp/xcfcO32GD
+32 cinit CODE >2516:/tmp/xcfcO32GD
+33 cinit CODE >2517:/tmp/xcfcO32GD
+34 cinit CODE >2518:/tmp/xcfcO32GD
+4 intentry CODE >51:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+9 intentry CODE >54:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+C intentry CODE >56:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+F intentry CODE >57:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+10 intentry CODE >58:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+16 intentry CODE >60:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+18 intentry CODE >66:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/interrupt_manager.c
+37C swtext2 CONST >46:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+368 swtext1 CONST >18:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+260 text18 CODE >14:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+260 text18 CODE >16:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+266 text18 CODE >20:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+268 text18 CODE >22:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+26A text18 CODE >24:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+26C text18 CODE >26:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+26E text18 CODE >28:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+270 text18 CODE >30:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+272 text18 CODE >32:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+274 text18 CODE >34:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+276 text18 CODE >36:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+278 text18 CODE >38:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+27B text18 CODE >41:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+27C text18 CODE >18:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+28B text18 CODE >43:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+291 text18 CODE >48:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+294 text18 CODE >49:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+295 text18 CODE >50:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+298 text18 CODE >51:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+299 text18 CODE >52:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+29C text18 CODE >53:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+29D text18 CODE >54:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A0 text18 CODE >55:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A1 text18 CODE >56:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A4 text18 CODE >57:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A5 text18 CODE >58:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A8 text18 CODE >59:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2A9 text18 CODE >60:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2AC text18 CODE >61:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2AD text18 CODE >62:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B0 text18 CODE >63:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B1 text18 CODE >64:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B3 text18 CODE >65:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B4 text18 CODE >66:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B7 text18 CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2B8 text18 CODE >46:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2C7 text18 CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2C8 text18 CODE >71:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+121 text17 CODE >160:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+121 text17 CODE >163:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+123 text17 CODE >164:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+124 text17 CODE >165:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+125 text17 CODE >166:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+126 text17 CODE >168:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+127 text17 CODE >172:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+12C text17 CODE >173:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+133 text17 CODE >174:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+13A text17 CODE >175:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+13C text17 CODE >176:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+141 text17 CODE >179:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+142 text17 CODE >184:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+146 text17 CODE >185:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+14D text17 CODE >186:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+155 text17 CODE >187:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+157 text17 CODE >188:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+15C text17 CODE >190:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+15D text17 CODE >194:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+161 text17 CODE >195:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+168 text17 CODE >196:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+170 text17 CODE >197:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+172 text17 CODE >198:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+177 text17 CODE >201:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+178 text17 CODE >205:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+17C text17 CODE >206:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+183 text17 CODE >207:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+18B text17 CODE >208:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+18D text17 CODE >209:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+192 text17 CODE >211:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+193 text17 CODE >214:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+197 text17 CODE >215:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+19D text17 CODE >216:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+19F text17 CODE >217:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1A4 text17 CODE >219:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1A5 text17 CODE >222:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1A9 text17 CODE >223:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1AF text17 CODE >224:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1B1 text17 CODE >225:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1B6 text17 CODE >231:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1B7 text17 CODE >168:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1D1 text17 CODE >232:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3F2 text16 CODE >106:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3F2 text16 CODE >110:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3F3 text16 CODE >112:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3F6 text16 CODE >116:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3F8 text16 CODE >117:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+410 text15 CODE >149:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+410 text15 CODE >152:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3D7 text14 CODE >134:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3D7 text14 CODE >137:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3DC text14 CODE >139:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3E0 text14 CODE >141:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3A3 text13 CODE >116:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3A3 text13 CODE >121:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3A5 text13 CODE >124:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3B0 text13 CODE >127:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3B2 text13 CODE >130:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+405 text11 CODE >78:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+405 text11 CODE >81:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+408 text11 CODE >83:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+409 text11 CODE >85:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+40A text11 CODE >88:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+354 text10 CODE >49:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+354 text10 CODE >51:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+357 text10 CODE >52:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+359 text10 CODE >53:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+35B text10 CODE >54:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+35C text10 CODE >55:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+35E text10 CODE >56:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+35F text10 CODE >57:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+361 text10 CODE >58:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+363 text10 CODE >60:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+364 text10 CODE >61:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+366 text10 CODE >62:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+367 text10 CODE >66:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/pin_manager.c
+3C8 text9 CODE >64:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3C8 text9 CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3CD text9 CODE >72:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3D0 text9 CODE >75:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3D4 text9 CODE >78:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3D5 text9 CODE >81:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3D6 text9 CODE >82:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr0.c
+3FF text8 CODE >145:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3FF text8 CODE >146:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+404 text8 CODE >147:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+40B text7 CODE >84:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+40B text7 CODE >87:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+40D text7 CODE >88:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+390 text6 CODE >58:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+390 text6 CODE >63:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+393 text6 CODE >66:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+395 text6 CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+396 text6 CODE >72:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+397 text6 CODE >75:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+399 text6 CODE >78:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3A0 text6 CODE >81:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3A2 text6 CODE >82:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/tmr2.c
+3E6 text5 CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3E6 text5 CODE >72:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3E9 text5 CODE >73:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3EC text5 CODE >74:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3EF text5 CODE >75:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3F1 text5 CODE >76:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/mcc_generated_files/mcc.c
+3B6 text4 CODE >72:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3B6 text4 CODE >74:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3BE text4 CODE >76:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3C2 text4 CODE >77:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3C3 text4 CODE >78:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+36 text3 CODE >81:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+36 text3 CODE >85:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+3B text3 CODE >87:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+44 text3 CODE >89:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+4D text3 CODE >92:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+51 text3 CODE >93:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+5E text3 CODE >96:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+68 text3 CODE >97:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+75 text3 CODE >99:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+7B text3 CODE >105:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+81 text3 CODE >106:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+8A text3 CODE >108:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+8B text3 CODE >110:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+91 text3 CODE >111:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+9A text3 CODE >113:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+9B text3 CODE >115:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+A1 text3 CODE >116:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+AF text3 CODE >117:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+B8 text3 CODE >119:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+B9 text3 CODE >120:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+BF text3 CODE >121:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+D4 text3 CODE >123:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+D6 text3 CODE >126:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+D7 text3 CODE >103:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+EA text3 CODE >85:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+EB text3 CODE >129:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+F4 text3 CODE >130:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+F8 text3 CODE >132:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+105 text3 CODE >135:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+10E text3 CODE >136:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+11B text3 CODE >139:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+329 text2 CODE >144:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+329 text2 CODE >146:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+32E text2 CODE >147:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+332 text2 CODE >148:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+335 text2 CODE >149:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+33A text2 CODE >150:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+33D text2 CODE >151:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+342 text2 CODE >152:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+345 text2 CODE >153:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+34A text2 CODE >154:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+34C text2 CODE >155:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+34F text2 CODE >156:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+351 text2 CODE >157:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+353 text2 CODE >158:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2C9 text1 CODE >234:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2C9 text1 CODE >236:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2D1 text1 CODE >238:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2D3 text1 CODE >239:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2D9 text1 CODE >240:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2E0 text1 CODE >242:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2E2 text1 CODE >243:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2E8 text1 CODE >244:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2EF text1 CODE >246:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2F1 text1 CODE >247:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2F7 text1 CODE >248:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+2FE text1 CODE >250:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+300 text1 CODE >251:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+306 text1 CODE >252:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+314 text1 CODE >254:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+316 text1 CODE >255:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+31C text1 CODE >256:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+31D text1 CODE >257:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+324 text1 CODE >259:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+326 text1 CODE >260:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+328 text1 CODE >264:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/PIC_functions.c
+1D2 maintext CODE >57:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1D2 maintext CODE >60:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1D5 maintext CODE >66:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1D6 maintext CODE >69:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1D7 maintext CODE >80:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1DE maintext CODE >82:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1E2 maintext CODE >83:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1E3 maintext CODE >86:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1E5 maintext CODE >91:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1E8 maintext CODE >93:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1F1 maintext CODE >94:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1FA maintext CODE >97:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+1FE maintext CODE >99:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+20B maintext CODE >102:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+214 maintext CODE >103:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+221 maintext CODE >106:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+226 maintext CODE >107:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+229 maintext CODE >108:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+229 maintext CODE >109:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+22C maintext CODE >111:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+230 maintext CODE >113:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+23D maintext CODE >116:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+247 maintext CODE >117:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+254 maintext CODE >120:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+259 maintext CODE >122:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+25C maintext CODE >123:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+25C maintext CODE >124:/Users/Tobias/Documents/Programmieren/MPLab/PIC Uhr/PIC_UHR_SS16.X/main.c
+3F9 clrtext CODE >2477:/tmp/xcfcO32GD
+3F9 clrtext CODE >2478:/tmp/xcfcO32GD
+3FA clrtext CODE >2479:/tmp/xcfcO32GD
+3FA clrtext CODE >2480:/tmp/xcfcO32GD
+3FB clrtext CODE >2481:/tmp/xcfcO32GD
+3FC clrtext CODE >2482:/tmp/xcfcO32GD
+3FD clrtext CODE >2483:/tmp/xcfcO32GD
+3FE clrtext CODE >2484:/tmp/xcfcO32GD
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_anzeigewechseln 790 0 CODE 0 text4 dist/default/production/PIC_UHR_SS16.X.production.obj
+TMR2_ISR@CountCallBack 20 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_DP 22 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_HE 76 0 COMMON 1 bssCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+_HZ 78 0 COMMON 1 bssCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+_ME 24 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_MZ 26 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_SE 28 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_SZ 2A 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_LATA 10C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATB 10D 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2 1A 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_WPUA 20C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_WPUB 20D 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/xcObhgR1u.obj
+_main 3A4 0 CODE 0 maintext dist/default/production/PIC_UHR_SS16.X.production.obj
+_zahl 32 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+start 3A 0 CODE 0 init /tmp/xcObhgR1u.obj
+ttemp 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+_TMR2_Initialize 720 0 CODE 0 text6 dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_StartTimer 816 0 CODE 0 text7 dist/default/production/PIC_UHR_SS16.X.production.obj
+_siebensegdek 4C0 0 CODE 0 text18 dist/default/production/PIC_UHR_SS16.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+intlevel1 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+intlevel2 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+intlevel3 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+intlevel4 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+intlevel5 0 0 CODE 0 functab /tmp/xcObhgR1u.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_anzeigewechseln 76C 0 CODE 0 text4 dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ANSELA 18C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_INTERRUPT_InterruptManager 3A 0 CODE 0 intentry dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_siebensegdek 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__CFG_FOSC$ECH 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_OPTION_REG 95 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_siebensegdek 592 0 CODE 0 text18 dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_SetInterruptHandler 7FE 0 CODE 0 text8 dist/default/production/PIC_UHR_SS16.X.production.obj
+_uhrzweivier 592 0 CODE 0 text1 dist/default/production/PIC_UHR_SS16.X.production.obj
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_PIN_MANAGER_Initialize 6A8 0 CODE 0 text10 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_uhrzeitanzeigen 3A4 0 CODE 0 text17 dist/default/production/PIC_UHR_SS16.X.production.obj
+start_initialization 3E 0 CODE 0 cinit dist/default/production/PIC_UHR_SS16.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_anzeigewechseln 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_tasterzahl 30 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_SYSTEM_Initialize 7E4 0 CODE 0 text5 dist/default/production/PIC_UHR_SS16.X.production.obj
+clear_ram0 7F2 0 CODE 0 clrtext dist/default/production/PIC_UHR_SS16.X.production.obj
+__pcstackBANK0 34 0 BANK0 1 cstackBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+TMR2_SetInterruptHandler@InterruptHandler 73 0 COMMON 1 cstackCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcObhgR1u.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 6C 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+_uhrzeitanzeigen 242 0 CODE 0 text17 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 3E 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_APFCON0 11D 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_APFCON1 11E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_uhrstellen 652 0 CODE 0 text2 dist/default/production/PIC_UHR_SS16.X.production.obj
+_PORTAbits C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 3A 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 3A 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 37 0 BANK0 1 nvBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_mux 39 0 BANK0 1 dataBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR2_ISR 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__pnvCOMMON 7A 0 COMMON 1 nvCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR2_SetInterruptHandler 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_SYSTEM_Initialize 7CC 0 CODE 0 text5 dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_DefaultInterruptHandler 820 0 CODE 0 text15 dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_CallBack 7AE 0 CODE 0 text14 dist/default/production/PIC_UHR_SS16.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcObhgR1u.obj
+__pdataBANK0 39 0 BANK0 1 dataBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_uhrstellen 6A8 0 CODE 0 text2 dist/default/production/PIC_UHR_SS16.X.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production/PIC_UHR_SS16.X.production.obj
+_PIE1bits 91 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR0_ISR 7E4 0 CODE 0 text16 dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_ISR 746 0 CODE 0 text13 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext10 6A8 0 CODE 0 text10 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext11 80A 0 CODE 0 text11 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext13 746 0 CODE 0 text13 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext14 7AE 0 CODE 0 text14 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext15 820 0 CODE 0 text15 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext16 7E4 0 CODE 0 text16 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext17 242 0 CODE 0 text17 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext18 4C0 0 CODE 0 text18 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_PIN_MANAGER_Initialize 6D0 0 CODE 0 text10 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR0_Initialize 7AE 0 CODE 0 text9 dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_uhrzeitanzeigen 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 3A4 0 CODE 0 maintext dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR0_ISR 7F2 0 CODE 0 text16 dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_ISR 76C 0 CODE 0 text13 dist/default/production/PIC_UHR_SS16.X.production.obj
+_tasterpos 2E 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+stackhi 216F 0 ABS 0 - /tmp/xcObhgR1u.obj
+stacklo 201B 0 ABS 0 - /tmp/xcObhgR1u.obj
+_OSCSTAT 9A 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_OSCTUNE 98 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_uhrzweivier 652 0 CODE 0 text1 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_SetInterruptHandler 80A 0 CODE 0 text8 dist/default/production/PIC_UHR_SS16.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits 11 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lend_init 3A 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 64 0 CODE 0 cinit dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR0_Initialize 790 0 CODE 0 text9 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hintentry 3A 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__size_of_TMR2_CallBack 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 592 0 CODE 0 text1 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext2 652 0 CODE 0 text2 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext3 6C 0 CODE 0 text3 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext4 76C 0 CODE 0 text4 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext5 7CC 0 CODE 0 text5 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext6 720 0 CODE 0 text6 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext7 816 0 CODE 0 text7 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext8 7FE 0 CODE 0 text8 dist/default/production/PIC_UHR_SS16.X.production.obj
+__ptext9 790 0 CODE 0 text9 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_digitstellen 6C 0 CODE 0 text3 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_CallBack 7CC 0 CODE 0 text14 dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of__initialization 64 0 CODE 0 cinit dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+_timer0ReloadVal 7A 0 COMMON 1 nvCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+__pidataBANK0 81C 0 CODE 0 idataBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_DefaultInterruptHandler 822 0 CODE 0 text15 dist/default/production/PIC_UHR_SS16.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hend_init 3E 0 CODE 0 end_init -
+__size_of_uhrstellen 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_main 4C0 0 CODE 0 maintext dist/default/production/PIC_UHR_SS16.X.production.obj
+siebensegdek@zahl 70 0 COMMON 1 cstackCOMMON dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATA0 860 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATA1 861 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATA2 862 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATA3 863 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_LATB7 86F 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_T2CON 1C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+_TRISB 8D 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_digitstellen 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_digit 2C 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_TMR2_InterruptHandler 37 0 BANK0 1 nvBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production/PIC_UHR_SS16.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_of_OSCILLATOR_Initialize 816 0 CODE 0 text11 dist/default/production/PIC_UHR_SS16.X.production.obj
+__initialization 3E 0 CODE 0 cinit dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production/PIC_UHR_SS16.X.production.obj
+_T2CONbits 1C 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__size_of_uhrzweivier 0 0 ABS 0 - dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_digitstellen 242 0 CODE 0 text3 dist/default/production/PIC_UHR_SS16.X.production.obj
+__pswtext1 6D0 0 CONST 0 swtext1 dist/default/production/PIC_UHR_SS16.X.production.obj
+__pswtext2 6F8 0 CONST 0 swtext2 dist/default/production/PIC_UHR_SS16.X.production.obj
+_OSCILLATOR_Initialize 80A 0 CODE 0 text11 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_Initialize 746 0 CODE 0 text6 dist/default/production/PIC_UHR_SS16.X.production.obj
+__end_of_TMR2_StartTimer 81C 0 CODE 0 text7 dist/default/production/PIC_UHR_SS16.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text6 0 390 720 81 2
+cstackCOMMON 1 70 70 B 1
+intentry 0 4 8 364 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 1B 1
+swtext1 0 368 6D0 28 2
+config 0 8007 1000E 2 2
